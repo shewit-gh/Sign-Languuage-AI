@@ -19,7 +19,7 @@ class Landing extends StatelessWidget {
       resizeToAvoidBottomInset: false, 
       appBar: AppBar(title: Text('Sign Language')),
       body: Center(
-          child: Column(children: [
+          child: ListView(children: [
             SizedBox(height: 80,),
             Container(
                   // width: 330,
@@ -29,9 +29,9 @@ class Landing extends StatelessWidget {
                   ),
                 ),
           SizedBox(height:20),
-        Text("WELCOME", style:TextStyle(color:Colors.teal, fontSize: 35)),
+        Text("WELCOME", style:TextStyle(color:Colors.lightGreen, fontSize: 35)),
         SizedBox(height:20),
-        Text('Do you want to learn sign language?', style:TextStyle(color:Colors.teal, fontSize: 14)),
+        Text('Do you want to learn sign language?', style:TextStyle(color:Colors.lightGreen, fontSize: 14)),
         SizedBox(height:50),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
@@ -49,7 +49,7 @@ class Landing extends StatelessWidget {
               decoration: BoxDecoration(
               boxShadow: [
                  BoxShadow(
-                      color: Colors.teal,
+                      color: Colors.lightGreen,
                       offset: const Offset(
                         3.0,
                         3.0,

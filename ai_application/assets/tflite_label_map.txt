@@ -1,0 +1,30 @@
+Airport
+Aunt
+Brother
+Child
+Church
+City
+Country
+Cousin
+Drink
+Eat
+Father
+Friend
+Happy
+Hello
+Hospital
+I Love You
+Mother
+No
+Play
+Run
+Sad
+School
+Sister
+Sit
+Sleep
+Stand
+Store
+Thank You
+Uncle
+Yes

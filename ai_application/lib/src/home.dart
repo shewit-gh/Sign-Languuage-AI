@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
              decoration: BoxDecoration(
               boxShadow: [
                  BoxShadow(
-                      color: Colors.teal,
+                      color: Colors.lightGreen,
                       offset: const Offset(
                         3.0,
                         3.0,
@@ -48,7 +48,7 @@ class Home extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                  BoxShadow(
-                      color: Colors.teal,
+                      color: Colors.lightGreen,
                       offset: const Offset(
                         3.0,
                         3.0,

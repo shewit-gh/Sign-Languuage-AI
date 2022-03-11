@@ -3,12 +3,16 @@ import 'package:ai_application/src/landing.dart';
 import 'package:ai_application/src/practice.dart';
 import 'package:ai_application/src/quiz.dart';
 import 'package:ai_application/src/quizpage.dart';
+import 'package:ai_application/src/Score.dart';
 
 import 'package:ai_application/src/practice_detail.dart';
+import 'package:camera/camera.dart';
 
 import 'package:flutter/material.dart';
-
-void main() {
+List<CameraDescription> cameras = [];
+Future main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+   cameras = await availableCameras();
   runApp(MyApp());
 }
 
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Sign Language Detector',
         theme: ThemeData(
-          primarySwatch: Colors.teal,
+          primarySwatch: Colors.lightGreen,
         ),
         initialRoute: Landing.routeName,
         routes: {
@@ -29,7 +33,8 @@ class MyApp extends StatelessWidget {
           Practice.routeName: (BuildContext context) =>Practice(),
           Quiz.routeName: (BuildContext context) =>Quiz(),
           PracticeDetail.routeName: (BuildContext context) =>PracticeDetail(),
-          Quizpage.routeName: (BuildContext context)=>Quizpage()
+          Quizpage.routeName: (BuildContext context)=>Quizpage(),
+          ScorePage.routeName: (BuildContext context)=>ScorePage()
 
         });
   }

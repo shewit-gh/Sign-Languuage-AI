@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-class Quiz extends StatelessWidget {
-  static const String routeName = "/quizstarter";
+class ScorePage extends StatelessWidget {
+  static const String routeName = "/score_page";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +22,7 @@ class Quiz extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.only(top: 35, left: 5),
                   child: Text(
-                    '''When the time starts you will be given
-a word to display using a sign language.
-click the start button when you are ready.''',
+                    "Score : 0",
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 18,
@@ -52,8 +49,8 @@ click the start button when you are ready.''',
                   // padding: EdgeInsets.only(left: 20, top: 30),
                   child: ElevatedButton(
                     onPressed: () =>
-                        {Navigator.pushNamed(context, '/quizpage')},
-                    child: Text("START", style:TextStyle(fontSize: 20)),
+                        {Navigator.pushNamed(context, '/home')},
+                    child: Text("Home", style:TextStyle(fontSize: 20)),
                   ))
             ],
           ),
